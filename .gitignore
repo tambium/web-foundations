@@ -1,0 +1,10 @@
+# dependencies
+node_modules/
+
+# debug
+npm-debug.log
+**/npm-debug.log
+lerna-debug.log
+
+# OS
+.DS_Store
