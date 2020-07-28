@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "publish": "lerna publish",
+    "release": "lerna publish",
     "version": "lerna version",
     "version:patch": "lerna version patch"
   },
