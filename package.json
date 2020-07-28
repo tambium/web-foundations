@@ -6,9 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "release": "lerna publish",
-    "version": "lerna version",
-    "version:patch": "lerna version patch"
+    "release": "lerna publish"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
