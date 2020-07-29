@@ -5,19 +5,24 @@ export interface WebOptions {
    */
   corejs?: number | string;
   /**
-   * @description Boolean indicating whether `@babel/preset-env` debugging is enabled.
+   * @description Boolean indicating whether `@babel/preset-env` outputs the targets/plugins used and the version specified in plugin data version to console.log.
    * @default false
    */
   debug?: boolean;
   /**
-   * @description Boolean indicating whether native ES2015 modules should be transpiled to CommonJS equivalents. Set this option to false when using a bundler like Rollup or Webpack.
-   * @default true
+   * @description Enable transformation of ES6 module syntax to another module type. Setting this to false will not transform modules. Also note that cjs is just an alias for commonjs.
+   * @default false
    */
-  modules?: boolean;
+  modules?: "amd" | "umd" | "systemjs" | "commonjs" | "cjs" | "auto" | false;
   /**
-   * @description Browserlist string or array, which specifies which browsers to transpile for.
+   * @description Describes the environments supported by project.
    */
-  targets?: string | string[];
+  targets?:
+    | string
+    | Array<string>
+    | {
+        browsers?: string | Array<string>;
+      };
   /**
    * @description Boolean indicating whether `@babel/preset-typescript` is enabled.
    * @default true

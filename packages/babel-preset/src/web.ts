@@ -4,7 +4,7 @@ import sharedPlugins from "./shared-plugins";
 
 export default (options: WebOptions): TransformOptions => {
   const {
-    modules = true,
+    modules = "commonjs",
     corejs = 2,
     debug = false,
     targets,
