@@ -1,8 +1,8 @@
-import type { PluginItem } from "@babel/core";
+import type { PluginItem, TransformOptions } from "@babel/core";
 import type { WebOptions } from "./types";
-import { sharedPlugins } from "./shared-plugins";
+import sharedPlugins from "./shared-plugins";
 
-export const web = (options: WebOptions) => {
+export default (options: WebOptions): TransformOptions => {
   const {
     modules = true,
     corejs = 2,

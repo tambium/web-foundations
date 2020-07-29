@@ -1,7 +1,7 @@
 {
-  "name": "@tambium/babel-presets",
+  "name": "@tambium/babel-preset",
   "author": "Tambium",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "files": [
     "dist"
@@ -11,20 +11,21 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "babel --out-dir ./dist --extensions \".ts\" ./src",
+    "build": "tsc src/*.ts --outDir dist",
     "clean": "rm -rf dist"
   },
   "dependencies": {
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-optional-chaining": "^7.10.4",
+    "@babel/plugin-transform-arrow-functions": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@emotion/babel-preset-css-prop": "^10.0.27"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@types/babel__core": "^7.1.9"
+    "@types/babel__core": "^7.1.9",
+    "typescript": "^3.9.7"
   }
 }
