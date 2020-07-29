@@ -6,6 +6,8 @@
     "packages/*"
   ],
   "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
     "release": "lerna publish"
   },
   "devDependencies": {

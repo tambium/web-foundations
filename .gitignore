@@ -8,3 +8,6 @@ lerna-debug.log
 
 # OS
 .DS_Store
+
+# builds
+dist/
