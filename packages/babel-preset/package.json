@@ -12,8 +12,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "tsc src/*.ts --outDir dist",
-    "clean": "rm -rf dist"
+    "build": "tsc src/*.ts --outDir ./",
+    "clean": "rm -rf ./*.js"
   },
   "dependencies": {
     "@babel/core": "^7.10.5",

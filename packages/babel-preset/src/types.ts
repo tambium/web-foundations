@@ -1,3 +1,11 @@
+export interface ReactOptions {
+  /**
+   * @description Boolean indicating whether `@emotion/babel-preset-css-prop` is enabled.
+   * @default true
+   */
+  emotion?: boolean;
+}
+
 export interface WebOptions {
   /**
    * @description Sets `corejs` version used in `@babel/preset-env`.
