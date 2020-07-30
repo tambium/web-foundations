@@ -3,9 +3,12 @@
   "author": "Tambium",
   "version": "1.0.4",
   "license": "Apache-2.0",
-  "main": "dist/index.js",
+  "main": "index.js",
   "files": [
-    "dist"
+    "index.js",
+    "web.js",
+    "react.js",
+    "shared-plugins.js"
   ],
   "publishConfig": {
     "access": "public",
