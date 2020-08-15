@@ -1,0 +1,11 @@
+{
+  "name": "@tambium/prettier-config",
+  "author": "Tambium",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "main": "index.json",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
