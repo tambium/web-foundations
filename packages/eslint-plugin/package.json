@@ -1,5 +1,5 @@
 {
-  "name": "@tambium/eslint-config",
+  "name": "@tambium/eslint-plugin",
   "author": "Tambium",
   "version": "1.0.2",
   "license": "Apache-2.0",
