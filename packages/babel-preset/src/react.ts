@@ -2,7 +2,7 @@ import type { ConfigAPI, PluginItem, TransformOptions } from "@babel/core";
 import type { ReactOptions } from "./types";
 
 export default (api: ConfigAPI, options: ReactOptions): TransformOptions => {
-  const { emotion = true } = options;
+  const { emotion = false } = options;
 
   const env = api.env();
   const isDevelopment = env === "development" || env === "test";
