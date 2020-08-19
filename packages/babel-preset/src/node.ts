@@ -1,8 +1,8 @@
 import type { ConfigAPI, PluginItem, TransformOptions } from "@babel/core";
-import type { WebOptions } from "./types";
+import type { NodeOptions } from "./types";
 import sharedPlugins from "./shared-plugins";
 
-export default (_api: ConfigAPI, options: WebOptions): TransformOptions => {
+export default (_api: ConfigAPI, options: NodeOptions): TransformOptions => {
   const {
     modules = "commonjs",
     corejs = 2,

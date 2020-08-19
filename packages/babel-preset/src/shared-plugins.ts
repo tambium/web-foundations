@@ -1,7 +1,7 @@
 import type { PluginItem } from "@babel/core";
-import type { WebOptions } from "./types";
+import type { NodeOptions, WebOptions } from "./types";
 
-export default ({}: WebOptions): PluginItem[] => {
+export default ({}: NodeOptions | WebOptions): PluginItem[] => {
   const plugins: PluginItem[] = [];
 
   plugins.push(
