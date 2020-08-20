@@ -11,11 +11,16 @@ module.exports = {
     sourceType: "module",
   },
 
-  plugins: ["@babel", "import"],
+  plugins: ["@babel", "promise", "import"],
 
   settings: {
     "import/ignore": ["node_modules"],
   },
 
-  rules: {},
+  rules: [
+    "./rules/ecmascript-6",
+    "./rules/promise",
+    "./rules/babel",
+    "./rules/import",
+  ].map(require.resolve),
 };

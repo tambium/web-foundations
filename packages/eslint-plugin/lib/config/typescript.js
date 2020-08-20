@@ -1,5 +1,6 @@
 module.exports = {
   extends: ["plugin:@tambium/esnext", "plugin:import/typescript"],
+
   plugins: ["@typescript-eslint"],
 
   overrides: [
@@ -10,6 +11,7 @@ module.exports = {
         sourceType: "module",
       },
       files: ["*.ts", "*.tsx"],
+      rules: require("./rules/typescript"),
     },
   ],
 };

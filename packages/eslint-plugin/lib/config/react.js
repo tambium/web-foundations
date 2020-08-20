@@ -13,9 +13,16 @@ module.exports = {
     ecmaFeatures: { jsx: true },
   },
 
-  plugins: ["react", "jsx-a11y", "react-hooks", "@tambium"],
+  plugins: ["react", "jsx-a11y", "react-hooks"],
 
-  rules: {},
+  rules: ["./rules/react", "./rules/jsx-a11y", "./rules/react-hooks"].map(
+    require.resolve
+  ),
 
-  overrides: [],
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      rules: require("./rules/react-typescript"),
+    },
+  ],
 };

@@ -5,5 +5,5 @@ module.exports = {
 
   plugins: ["node"],
 
-  rules: {},
+  rules: require("./rules/node"),
 };
