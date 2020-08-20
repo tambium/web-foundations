@@ -1,7 +1,7 @@
 {
   "name": "@tambium/eslint-plugin",
   "author": "Tambium",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "license": "Apache-2.0",
   "main": "index.js",
   "files": [
