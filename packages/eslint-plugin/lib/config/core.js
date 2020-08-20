@@ -7,11 +7,11 @@ module.exports = {
     },
   },
 
-  rules: [
-    "./rules/best-practices",
-    "./rules/possible-errors",
-    "./rules/strict-mode",
-    "./rules/stylistic-issues",
-    "./rules/variables",
-  ].map(require.resolve),
+  rules: {
+    ...require("./rules/best-practices"),
+    ...require("./rules/possible-errors"),
+    ...require("./rules/strict-mode"),
+    ...require("./rules/stylistic-issues"),
+    ...require("./rules/variables"),
+  },
 };

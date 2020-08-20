@@ -17,10 +17,10 @@ module.exports = {
     "import/ignore": ["node_modules"],
   },
 
-  rules: [
-    "./rules/ecmascript-6",
-    "./rules/promise",
-    "./rules/babel",
-    "./rules/import",
-  ].map(require.resolve),
+  rules: {
+    ...require("./rules/ecmascript-6"),
+    ...require("./rules/promise"),
+    ...require("./rules/babel"),
+    ...require("./rules/import"),
+  },
 };

@@ -15,9 +15,11 @@ module.exports = {
 
   plugins: ["react", "jsx-a11y", "react-hooks"],
 
-  rules: ["./rules/react", "./rules/jsx-a11y", "./rules/react-hooks"].map(
-    require.resolve
-  ),
+  rules: {
+    ...require("./rules/react"),
+    ...require("./rules/jsx-a11y"),
+    ...require("./rules/react-hooks"),
+  },
 
   overrides: [
     {
