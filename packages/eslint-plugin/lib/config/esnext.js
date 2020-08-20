@@ -1,6 +1,6 @@
 module.exports = {
   extends: "plugin:@tambium/core",
-  parser: "babel-eslint",
+  parser: "@babel/eslint-parser",
 
   env: {
     es6: true,

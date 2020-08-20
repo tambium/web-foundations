@@ -11,7 +11,7 @@ module.exports = {
   // handles do expressions
   "@babel/no-unused-expressions": "error",
   // handles export * as x from "mod"
-  "@babel/object-curly-spacing": ["error", "never"],
+  "@babel/object-curly-spacing": "error",
   // handles class properties
   "@babel/semi": "error",
 };
