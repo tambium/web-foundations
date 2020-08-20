@@ -3,7 +3,7 @@ module.exports = {
 
   overrides: [
     {
-      parser: "@babel/eslint-parser",
+      parser: "babel-eslint",
       files: ["*.graphql"],
       rules: require("./rules/graphql"),
     },
