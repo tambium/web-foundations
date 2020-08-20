@@ -9,9 +9,6 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@babel/core": "^7.11.1",
-    "@babel/eslint-parser": "^7.11.3",
-    "@babel/eslint-plugin": "^7.11.3",
     "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@typescript-eslint/parser": "^3.9.0",
     "confusing-browser-globals": "^1.0.9",
@@ -26,6 +23,9 @@
     "eslint-plugin-react-hooks": "^4.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/eslint-parser": "^7.11.4",
+    "@babel/eslint-plugin": "^7.11.3",
     "typescript": "^3.9.7"
   }
 }
