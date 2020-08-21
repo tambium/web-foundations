@@ -5,5 +5,9 @@ module.exports = {
 
   plugins: ["node"],
 
-  rules: require("./rules/node"),
+  rules: {
+    ...require("./rules/node"),
+    "no-console": "off",
+    "no-process-env": "off",
+  },
 };
