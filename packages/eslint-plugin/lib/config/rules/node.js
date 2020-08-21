@@ -41,7 +41,21 @@ module.exports = {
   // make process.exit() expressions the same code path as throw
   "node/process-exit-as-throw": "off",
   // suggest correct usage of shebang
-  "node/shebang": "error",
+  "node/shebang": [
+    "error",
+    {
+      convertPath: [
+        {
+          include: ["src/**/*.ts"],
+          replace: ["^src/(.+)\\.ts$", "dist/$1.js"],
+        },
+        {
+          include: ["src/**/*.tsx"],
+          replace: ["^src/(.+)\\.tsx$", "dist/$1.js"],
+        },
+      ],
+    },
+  ],
 
   // best practices
 
