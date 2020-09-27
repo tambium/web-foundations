@@ -111,7 +111,7 @@ module.exports = {
   // disallow unused variables and arguments
   "@typescript-eslint/no-unused-vars-experimental": "off",
   // disallows the use of require statements except in import statements
-  "@typescript-eslint/no-var-requires": "error",
+  "@typescript-eslint/no-var-requires": "off",
   // prefer usage of as const over literal type
   "@typescript-eslint/prefer-as-const": "error",
   // prefer initializing each enums member value
