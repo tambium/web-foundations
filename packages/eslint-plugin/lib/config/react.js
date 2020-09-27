@@ -13,11 +13,10 @@ module.exports = {
     ecmaFeatures: { jsx: true },
   },
 
-  plugins: ["react", "jsx-a11y", "react-hooks"],
+  plugins: ["react", "react-hooks"],
 
   rules: {
     ...require("./rules/react"),
-    ...require("./rules/jsx-a11y"),
     ...require("./rules/react-hooks"),
   },
 
